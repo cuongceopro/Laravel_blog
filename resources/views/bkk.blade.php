@@ -64,7 +64,7 @@
 						và làm việc ở Nhật. Chúng tôi hi vọng tiếp cận các vấn đề sâu hơn đa chiều hơn, cung cấp cho người đọc một lượng
 						kiến thức nhất định để có thể phản ánh các hiện tượng còn nhiều bất cập đang xảy ra trong xã hội một cách khách
 						quan nhất. &#8230;</p>
-					<p class="readmore"><a href="/sub">Xem thêm</a></p>
+					<p class="readmore"><a href="{!! URL::to('sub/1') !!}">Xem thêm</a></p>
 				</div>
 			</article>
 			<article class="grid">

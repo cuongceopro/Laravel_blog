@@ -11,7 +11,7 @@
 
 	<p>{{ $category_post->content }}</p>
 
-	<p>{{ link_to("/bbc/{$category_post->id}", '続きを読む', array('class' => 'btn btn-primary')) }}</p>
+	<p>{{ link_to("/ledaq/{$category_post->id}", '続きを読む', array('class' => 'btn btn-primary')) }}</p>
 	<p>コメント数：{{ $category_post->comment_count }}</p>
 	<hr />
 @endforeach

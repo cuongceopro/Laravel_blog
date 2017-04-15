@@ -14,69 +14,30 @@ use Redirect;
 use App\Post;
 use Validator;
 use Input;
+use Illuminate\Database\Eloquent\Model;
 
 class Controller extends BaseController
 {
-    public function bcc()
+    public function getBkk()
     {
       $posts = Post::all();
-      return View::make('index')->with('posts', $posts);
+      return View::make('bkk')->with('posts', $posts);
       //return view('welcome');
     }
 
-    public function detail($id)
+    public function getDetail()
     {
-	    $post = Post::find($id);
-      return View::make('single')->with('post', $post);
-      //return "OK";
+      return view('detail');
     }
 
-    public function create()
-    {
-      $post = Post::all();
-      return View::make('create')->with('post', $post);
-      //return "OK";
+    public function getSub($id){
+      $category_posts_a = Post::latest('id');
+      $category_posts = $category_posts_a->where('cat_id', $id)->paginate(10);
+
+       return View::make('sub')
+         ->with('category_posts', $category_posts);
     }
 
-    public function store(Request $request)
-{
-	$rules = [
-		'title' => 'required',
-		'content'=>'required',
-		'cat_id' => 'required'
-	];
-
-	$messages = array(
-		'title.required' => 'タイトルを正しく入力してください。',
-		'content.required' => '本文を正しく入力してください。',
-		'cat_id.required' => 'カテゴリーを選択してください。',
-	);
-
-	$validator = Validator::make(Request::all(), $rules, $messages);
-
-	if ($validator->passes()) {
-		$post = new Post;
-		$post->title = Request::input('title');
-		$post->content = Request::input('content');
-		$post->cat_id = Request::input('cat_id');
-    $post->comment_count = 0;
-		$post->save();
-		return Redirect::back()
-			->with('message', '投稿が完了しました。');
-	}else{
-		return Redirect::back()
-			->withErrors($validator)
-			->withInput();
-	}
-}
-
-  public function showCategory($id)
-  {
-	   $category_posts = Post::where('cat_id', $id)->get();
-
-	    return View::make('category')
-		    ->with('category_posts', $category_posts);
-  }
 
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 }

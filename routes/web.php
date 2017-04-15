@@ -19,14 +19,20 @@ Route::get('/', function () {
   //return 'Ok';
 //});
 
-Route::get('/bcc', 'Controller@bcc');
+Route::get('/bcc', 'PostsController@bcc');
 
-Route::get('/detail/{id?}', 'Controller@detail');
+Route::get('/detail/{id?}', 'PostsController@detail');
 
-Route::get('/category/{id?}', 'Controller@showCategory');
+Route::get('/category/{id?}', 'PostsController@showCategory');
 
-Route::get('/create', 'Controller@create');
+Route::get('/create', 'PostsController@create');
 
-Route::post('/store', 'Controller@store');
+Route::post('/store', 'PostsController@store');
 
 Route::post('/comment_store', 'CommentsController@store');
+
+Route::get('/bkk', 'Controller@getBkk');
+
+Route::get('/bkk_detail', 'Controller@getDetail');
+
+Route::get('/sub/{id?}', 'Controller@getSub');
