@@ -64,7 +64,7 @@
 						Jenkins là người đặc biệt hứng thú với công nghệ. Trong thời gian làm việc tại Barclays, ông giám sát việc phát triển nhiều ý tưởng đột phá, như thanh toán bằng séc qua điện thoại di động
 						</p><br clear="all" />
 
-						<p>{{ link_to("/bbc/{$category_post->id}", '続きを読む', array('class' => 'btn btn-primary')) }}</p>
+						<p>{{ link_to("/detail/{$category_post->id}", '続きを読む', array('class' => 'btn btn-primary')) }}</p>
 
 						@endforeach
 

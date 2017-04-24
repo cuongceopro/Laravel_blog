@@ -21,7 +21,7 @@
 	<header id="header" role="banner">
 		<div class="inner">
 			<div class="logo">
-				<a href="/bkk" title="ホームページサンプル株式会社" rel="home">YNU-Góc chia sẻ<br /><span>TOGETHER WE CAN</span</a>
+				<a href="/bkk" title="ホームページサンプル株式会社" rel="home">VJ-SHARE<br /><span>TOGETHER WE CAN</span</a>
 					<h1>Do something for our country</h1>
 					<!--
 				<h1>Cổng thông tin chính thức của YNU Benkyoukai</h1>
@@ -76,6 +76,9 @@
 						 đến đọc giả những quan điểm, suy nghĩ hay về rèn luyện bản thân. Từ đó, góp phần chung tay xây dựng một giới trẻ Việt
 						Nam vững vàng về tư tưởng. &#8230;</p>
 					<p class="readmore"><a href="/sub">Xem thêm</a></p>
+					<br />
+					<br />
+					<br />
 				</div>
 			</article>
 			<article class="grid">
@@ -111,8 +114,8 @@
 					Mục đích chúng tôi hướng đến là:
 				<br />
 
-					●Chia sẻ những câu chuyện và suy nghĩ của mình về các vấn đề xã hội.<br />
-					●Cung cấp những cách nhìn đa chiều để khơi dậy một môi trường giúp người đọc có thể phát triển thêm những hướng suy nghĩ cho riêng mình.<br />
+					● Chia sẻ những câu chuyện và suy nghĩ của mình về các vấn đề xã hội.<br />
+					● Cung cấp những cách nhìn đa chiều để khơi dậy một môi trường giúp người đọc có thể phát triển thêm những hướng suy nghĩ cho riêng mình.<br />
 				</p>
 
 				<p>
@@ -127,7 +130,8 @@
 		<div class="inner">
 			<section class="gridWrapper">
 				<article class="grid">
-					<p class="logo"><a href="/bkk" title="ホームページサンプル株式会社" rel="home">YNU-Góc chia sẻ<br /><span>Make the change</span></a></p>
+					<p class="logo"><a href="/bkk" title="ホームページサンプル株式会社" rel="home">VJ-SHARE<br /><span>TOGETHER WE CAN</span></a></p>
+					<h1>Do something for our country</h1>
 				</article>
 				<article class="grid">
 					<p class="tel"><span>Điện thoại:</span> <strong>080-3899-2908</strong></p>

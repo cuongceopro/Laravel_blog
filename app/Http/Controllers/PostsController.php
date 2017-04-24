@@ -27,7 +27,7 @@ class PostsController extends BaseController
     public function detail($id)
     {
 	    $post = Post::find($id);
-      return View::make('single')->with('post', $post);
+      return View::make('detail')->with('post', $post);
       //return "OK";
     }
 
