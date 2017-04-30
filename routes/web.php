@@ -36,3 +36,7 @@ Route::get('/bkk', 'Controller@getBkk');
 Route::get('/bkk_detail', 'Controller@getDetail');
 
 Route::get('/sub/{id?}', 'Controller@getSub');
+
+Route::get('/aboutus', 'Controller@getAboutus');
+
+Route::get('/contact', 'Controller@getContact');

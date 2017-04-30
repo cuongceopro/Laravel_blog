@@ -38,6 +38,16 @@ class Controller extends BaseController
          ->with('category_posts', $category_posts);
     }
 
+    public function getAboutus()
+    {
+      return view('aboutus');
+    }
+
+    public function getContact()
+    {
+      return view('contact');
+    }
+
 
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 }

@@ -1,48 +1,6 @@
-<!DOCTYPE html>
-<html lang="ja">
+@extends('page_default')
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, user-scalable=yes, maximum-scale=1.0, minimum-scale=1.0">
-	<meta name="description" content="ホームページサンプル株式会社のサイトです">
-	<title>YNU-Góc chia sẻ</title>
-	<link rel="profile" href="http://gmpg.org/xfn/11">
-	<link rel="stylesheet" type="text/css" media="all" href="/css/style.css">
-	<!--[if lt IE 9]>
-	<script src="js/html5.js"></script>
-	<script src="js/css3-mediaqueries.js"></script>
-	<![endif]-->
-	<script src="js/jquery1.4.4.min.js"></script>
-	<script src="js/script.js"></script>
-</head>
-
-<body>
-
-	<header id="header" role="banner">
-		<div class="inner">
-			<div class="logo">
-				<a href="/bkk" title="ホームページサンプル株式会社" rel="home">YNU-Góc chia sẻ<br /><span> [Slogan] Make the change!</span</a>
-				<h1>Cổng thông tin chính thức của YNU Benkyoukai</h1>
-			</div>
-			<nav id="mainNav">
-				<div class="inner">
-					<a class="menu" id="menu"><span>MENU</span></a>
-					<div class="panel">
-						<ul id="topnav">
-							<li><a href="/bkk"><strong> Trang chủ</strong><br /><span>Top</span></a></li>
-							<li class="current-menu-item"><a href="/detail"><strong>YNU Benkyoukai</strong><br /><span>About us</span></a>
-							</li>
-							<!--
-							<li><a href="/detail"><strong>Hoạt động</strong><br /><span>Activity</span></a></li>
-							<li><a href="/detail"><strong>Thành viên</strong><br /><span>Members</span></a></li>
-						-->
-							<li><a href="/detail"><strong>Liên hệ</strong><br /><span>Contact</span></a></li>
-						</ul>
-					</div>
-				</div>
-			</nav>
-		</div>
-	</header>
+@section('page_content')
 
 	<div id="wrapper">
 		<section id="main">
@@ -116,67 +74,17 @@
 						  “ Trưởng thành là không chết ở tuổi 20….”
 						</p>
 
-
-
+            <?php
+            $count = $post->view_count;
+            //echo $count;
+            $count = $count + 1;
+            DB::table('posts')->where('id', $post->id)->update(['view_count' => $count]);
+            ?>
 
 				</article>
 			</section>
-			<div class="pagenav">
-				<span class="prev"><a href="/detail" rel="prev">&laquo; Trang trước</a></span>
-				<span class="next"><a href="/detail" rel="next">Trang sau &raquo;</a></span>
-			</div>
 		</section>
 
-		<aside id="sub" class="gridWrapper">
-			<section class="grid">
-				<h3>Link</h3>
-				<ul class="menu">
-					<li><a href="https://www.google.com/?hl=ja&#038;gws_rd=ssl">Google</a></li>
-					<li><a href="http://www.yahoo.co.jp/">Yahoo!JAPAN</a></li>
-					<li><a href="http://www.amazon.co.jp/">Amazon</a></li>
-					<li><a href="http://www.rakuten.co.jp/">Rakuten</a></li>
-					<li><a href="http://www.yahoo.co.jp/">Yahoo!JAPAN</a></li>
-				</ul>
-			</section>
-			<section class="grid">
-				<h3>Bài viết mới</h3>
-				<ul>
-					<li><a href="/detail">Những sếp ngân hàng bỏ việc theo fintech</a></li>
-					<li><a href="/detail">Cựu Giám đốc của Barclays - Rich Ricci</a></li>
-					<li><a href="/detail">Những sếp ngân hàng bỏ việc theo fintech</a></li>
-					<li><a href="/detail">Những sếp ngân hàng bỏ việc theo fintech</a></li>
-					<li><a href="/detail">Những sếp ngân hàng bỏ việc theo fintech</a></li>
-				</ul>
-			</section>
-			<section class="grid">
-				<h3>Bài viết cũ</h3>
-				<ul>
-					<li><a href="/detail">2016/9</a></li>
-					<li><a href="/detail">2016/8</a></li>
-					<li><a href="/detail">2016/7</a></li>
-					<li><a href="/detail">2016/6</a></li>
-					<li><a href="/detail">2016/5</a></li>
-				</ul>
-			</section>
-		</aside>
 	</div>
 
-	<footer id="footer">
-		<div class="inner">
-			<section class="gridWrapper">
-				<article class="grid">
-					<p class="logo"><a href="/bkk" title="ホームページサンプル株式会社" rel="home">YNU-Góc chia sẻ<br /><span>Make the change</span></a></p>
-				</article>
-				<article class="grid">
-					<p class="tel"><span>Điện thoại:</span> <strong>080-3899-2908</strong></p>
-					<p class="open">Email: ynu_benkyoukai@gmail.com</p>
-				</article>
-				<article class="grid copyright">
-					Copyright(c) 2016 YNU-Benkyoukai All Rights Reserved. Design by Cuong Ceopro</a>
-				</article>
-			</section>
-		</div>
-	</footer>
-
-</body>
-</html>
+@stop
