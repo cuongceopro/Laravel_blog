@@ -24,55 +24,46 @@
               <p class="dateLabel">{{ date("Y/m/d",strtotime($post->created_at)) }}</p>
             </h3>
             <!--<p>カテゴリー：{{ $post->category->name }}</p>-->
-            <!--<h4>{{ $post->content }}</h4>-->
+						<?php
+            //echo $post->content;
+						?>
 
-						<p><img src="{{{asset('images/detail/detail_1_1.jpg')}}}" alt="" width="340" height="113" class="alignright" />
-						Ở Nhật, tuổi 20 được xem là cột mốc của sự trưởng thành. Lễ Thành Nhân (成人式) hằng năm vào thứ 2 tuần thứ 2 của tháng
-						 Giêng được tổ chức long trọng như một dịp nhìn nhận bản thân đã trở thành người lớn. Đạt đến ngưỡng 20, bạn bắt đầu có
-						thể uống rượu, hút thuốc, tự làm chủ các giấy tờ cá nhân hay mua hàng đắt tiền như điện thoại mà không cần đến sự bảo
-						lãnh của "người lớn" ( kỳ lạ ở chỗ dù 16, 18 tuổi chưa được công nhận là người lớn nhưng quyền kết hôn đã được hợp pháp hoá).
-					</p>
-					<p>
-						Thế nhưng tiêu chuẩn của sự trưởng thành là như thế nào? Tôi đã từng ngộ nhận rằng mình đã trưởng thành từ sớm, khi thu thập
-						được ít chút vốn liếng kinh nghiệm trong suốt 3 năm cấp 3 đầy lăn xả. Tôi tham gia vào bất kỳ hoạt động nào có thể, tập tành
-						kiếm tiền bằng nhiều cách thức khác nhau. Tôi có cơ may trò chuyện với nhiều tuýp người đến từ nhiều tầng lớp khác nhau trong
-						xã hội và thấy mình vô cùng hạnh phúc với những trải nghiệm tôi thu được. Chà!! Ấy vậy là trưởng thành! Tôi nghĩ.
-					</p>
-					<p>
-						18 tuổi quyết định xa nhà, thử sức mình với một chân trời mới, khao khát những trải nghiệm mới, được tự do quyết định tương lai,
-						tự độc lập tài chính, tiếp tục lối sống "tự biên tự diễn"... Tôi vỗ ngực với chút tự hào: Ấy vậy là trưởng thành!
-					</p>
-					<p>
-						Nhưng tôi đã nhầm! Khi được sempai (tiền bối những anh chị đi trước), những người bạn và người Nhật ở đây dạy cho mình chữ "omoiyari"
-						(tạm dịch là tấm lòng luôn hướng về người khác. Thật sự là tôi không tìm được một từ vựng nào để giải thích sát nghĩa từ này) khi ấy
-						tôi mới nhận thức rõ ràng hơn bản thân, nhìn thấy những điểm yếu, sự non nớt thiếu chính chắn của mình. Con đường đến sự trưởng thành
-						của tôi xem ra còn dài dài lắm.
-					</p>
-					<p>
-						Nói "omoiyari" tưởng chừng là những hành động cao thượng và đậm chất đạo lý, song nó lại được thể hiện rất giản dị qua đời sống hằng
-						ngày từ những hành động vô cùng nhỏ. Tôi ấn tượng trước bài phát biểu của sempai về việc gọt táo của người nhật. Rằng họ gọt với tư
-						thế quay lưỡi dao về phía mình (ngược hướng với Việt Nam mình) với mục đích tránh rủi ro gây tổn thương cho đối phương. Chịu khó quan
-						sát một chút tôi tìm thấy những hành động tương tự từ nhiều việc khác nữa. Ví dụ như khi có đồ thuỷ tinh vỡ, những mảnh vỡ gom lại được
-						được gói cẩn thận trong một tờ giấy báo, bọc ngoài một túi bóng trong suốt và kém theo một tờ giấy to trên đó có ghi "Đồ nguy hiểm xin cẩn thận".
-						Hay chuyện những thang cuốn ở nhà ga. Hoặc trái hoặc phải, tất cả mọi người đều thống nhất đứng nép về một phía. Làm thế, nếu có  ai đó đang vội vã,
-						họ có thể chạy một mạch để bắt kịp chuyến tàu. Người đi bộ và xe đạp chờ đèn đỏ ở ngã tư cũng vậy, họ luôn chọn một vị trí "an toàn nhất" để không trở
-						thành vật cản đường cho bất kỳ ai. Họ vẫn đang tiến về phía trước song lại luôn quan sát xung quanh để biết chắc rằng mình không gây trở ngại cho ai khác.
-						 Chữ "tôi" cần được học cách đứng sau chữ "mọi người".
-					 </p>
-					 <p>
-						Tôi từng nghĩ thước đo của sự trưởng thành là trải nghiệm. Bây giờ tôi vẫn không phủ nhận nó, song trải nghiệm không là chưa đủ. Tự lo cho bản thân
-						hay khôn ngoan tiến bước mà quên đi sự tồn tại của mọi người(những người xung quanh hoặc xã hội xung quanh) thì mãi mãi cũng chỉ được đánh giá là một đứa trẻ.
-						Có người đã dạy tôi bài học này. Có một Chút cay đắng nhưng là một bài học tôi sẽ không bao giờ quên. Bài học gì???  “ dẫn bài học hoặc câu nói”
-					</p>
-					<p>
-						"Omoiyari" hiểu nó là một chuyện, nhận thức được nó là một chuyện, nhưng để thực hiện nó lại là một vấn đề khác. Tôi sẽ học cách trưởng thành, hay ít nhất là
-						để trả lại quá nhiều "omoiyari" tôi nhận được từ mọi người.
-					</p>
-					<p>
-						Tôi nhận ra rằng, trưởng thành không có một điểm dừng nhất định cho mỗi con người. Vì mỗi cá nhân sẽ trưởng thành trên những khác nhau những thời điểm khác nhau.
-						 Tôi nghĩ vấn đề lớn của người trẻ, là ý thức rằng trưởng thành sẽ không có điểm dừng, để luôn bổ sung những thiếu sót của bản thân và cải thiện chính mình.
-						  “ Trưởng thành là không chết ở tuổi 20….”
-						</p>
+            <h4 style="text-align:center;"><b>Phần 1: Nước ta, học người học chưa tới</b></h4>
+<p><i>“Ngày nay việc vạch nổi màu vàng dẫn đường được thiết kế tại hầu hết khắp các công trình công cộng như nhà ga, trường học, trung tâm mua sắm... là minh chứng sáng tỏ nhất cho sự hiệu quả mà vạch nổi màu vàng đem lại cho người khiếm thị tại Nhật. Ngược lại, ở Việt Nam vạch dẫn đường vẫn đang còn khá lạ lẫm với người dân. Tình trạng sử dụng hiện nay của vạch dẫn đường này ở Việt Nam còn tồn tại nhiều bất cập, thiết kế thiếu tính hợp lí, sai kĩ thuật...”</i></p>
+
+<p><b>“Thiết kế toàn cầu” và “Xã hội không rào cản” </b></p>
+
+<p>
+Khái niệm “Thiết kế toàn cầu” (Universal Design) lần đầu được đưa đến công chúng bởi Selwyn Goldsmith, một nhà kiến trúc sư người Ireland với ý tưởng xây dựng cơ sở vật chất dành cho người khuyết tật. Ý tưởng này được các chính sách gia người Mỹ tiêu chuẩn hóa lên những quy tắc xã hội gọi tên là “American National Standard” năm 1961. Năm 2003, Trung Quốc, Hàn Quốc và Nhật Bản cũng áp dụng những quy chuẩn trên và cam kết cùng xây dựng một xã hội không rào cản (Barrier Free Society).
+</p>
+<p>
+<!--                            <img src="./YNU-Góc chia sẻ_files/detail_1_1.jpg" alt="" width="340" height="113" class="alignright">-->
+    <b>“Tenji Burokku” - Những viên gạch nổi</b>dẫn đường cho người khiếm thị được phân bố rộng rãi và là một trong những thành phần bắt buộc trong việc xây dựng cơ sở hạ tầng phục vụ người khuyết tật tại Nhật Bản. Tấm gạch nổi màu vàng đầu tiên trên thế giới được phát minh bởi ông Mitake Seichi vào năm 1965 và đến năm 1967 được lắp đặt thành vạch dẫn đường phục vụ cho người khiếm thị tại tỉnh Okayama, Nhật Bản.</p>
+<p>
+Gạch dẫn đường được chia làm hai loại chính gồm gạch sọc và gạch chấm bi. Loại gạch sọc có chức năng chỉ dẫn hướng đi thẳng về phía trước (ảnh trái). Bên cạnh đó  loại gạch chấm bi có chức năng cảnh báo nơi có nguy hiểm cần cẩn thận hay thông báo những điểm đường giao cắt hay trước cầu thang (ảnh phải). Nhờ có vạch dẫn đường mà người khiếm thị có thể an toàn tự mình đi bộ mà không cần sự giúp đỡ từ người khác, từ đó khả năng tham gia giao thông của họ cũng được cải thiện. Ngày nay việc vạch nổi màu vàng dẫn đường được thiết kế tại hầu hết khắp các công trình công cộng như nhà ga, trường học, trung tâm mua sắm... là minh chứng sáng tỏ nhất cho sự hiệu quả mà vạch nổi màu vàng đem lại cho người khiếm thị tại Nhật.
+</p>
+<p><b>Nước ta: đã thực sự suy nghĩ cho người khuyết tật? </b></p>
+<p>
+<!--                            <img src="./YNU-Góc chia sẻ_files/detail_1_1.jpg" alt="" width="340" height="113" class="alignright">-->
+Tại Việt Nam vạch dẫn đường vẫn đang còn khá lạ lẫm với người dân và còn tồn tại nhiều bất cập. Có rất nhiều bài báo phản ánh về vấn đề thiết kế thiếu tính hợp lý, sai kĩ thuật cũng như tình trạng sử dụng hiện nay của vạch dẫn đường này ở Việt Nam.
+</p>
+<p>
+Thứ nhất là việc thiết kế vị trí vạch dẫn đường không trùng khớp với làn qua đường dành cho người đi bộ. Tại những nơi qua đường, gạch dẫn đường không được thiết kế loại nổi chấm bi để thông báo cho người khuyết tật để dừng lại. Gạch sọc dẫn đường đi về phía trước thì những đường sọc bị xếp sai hướng (gạch sọc lại bị xếp ngang thay vì song song), không có chức năng chỉ hướng người khiếm thị. Chưa cần kể đến việc giao thông ở Việt Nam rất hỗn độn, người tham gia giao thông chưa thực sự nghiêm chỉnh chấp hành các quy dịnh. Nếu như cứ theo sự chỉ dẫn của vạch dẫn đường thì tính mạng người khiếm thị cũng đủ bị đe dọa.
+</p>
+<p>
+<!--                            <img src="./YNU-Góc chia sẻ_files/detail_1_1.jpg" alt="" width="340" height="113" class="alignright">-->
+Thứ hai, quá trình thiết kế vạch dẫn đường chưa có sự phối hợp nhất quán với các thiết kế đô thị khác. Đơn cử như vấn đề các cột đèn được lắp đặt ngay phía trên vạch dẫn đường, gây cản trở quá trình tham gia giao thông của người khiếm thị. Thiết nghĩ đơn vị thi công lắp đặt đèn có lẽ không hề biết đến ý nghĩa của vạch dẫn đường này là gì, do vậy mới lắp đặt cột đèn một cách cẩu thả như thế. Hoặc ngược lại, kế hoạch thiết kế vạch dẫn đường chưa được tính toán để đối ứng với các công trình công cộng đã có. Việc thiếu tầm nhìn trong quy hoạch đô thị dẫn đến tình trạng các công trình bị xây dựng chồng chất lên nhau, không những làm cho tính năng của các công trình bị giảm đi mà còn có khả năng gây ra nguy hiểm cho người sử dụng. Với quá trình đô thị hóa diễn ra với tốc độ nhanh chóng ở Việt Nam thì việc các công trình xây dựng được tu sửa hay thiết kế mới là điều tất yếu. Tuy nhiên điều đáng bàn ở đây là việc xây dựng những công trình mới cần nên cân nhắc đến những công trình đã có trước đó, tránh hậu quả các công trình gây cản trở lẫn nhau. Việc thiết kế cột đèn đường lên trên vạch dẫn đường là một thực tế trong số đó.
+</p>
+<p>
+<!--                            <img src="./YNU-Góc chia sẻ_files/detail_1_1.jpg" alt="" width="340" height="113" class="alignright">-->
+Thứ ba, không chỉ riêng các bộ phận quy hoạch đô thị, đại đa số người dân Việt Nam cũng chưa ý thức về sự tồn tại và ý nghĩa của những viên gạch nổi này. Tình trạng dễ nhận thấy hiện nay là các vỉa hè đều bị lấn chiếm bởi những hoạt động kinh doanh bán hàng hay trở thành bãi đậu xe máy tự phát. Những vỉa hè như thế này thì đối với người bình thường để đi lại còn khó khăn, huống hồ là những người khiếm thị. Việc lấn chiếm vỉa hè không những gây cản trở cho việc tham gia giao thông đường bộ mà còn làm giảm đi tính chất cộng đồng của các công trình công cộng. Việc kiếm lợi nhuận thì chỉ là việc của một cá nhân hay tổ chức nhỏ nhưng hậu quả mà nó gây ra thì lại ảnh hưởng đến cả xã hội.
+</p>
+<p>
+Việc thiết kế vạch dẫn đường có ý nghĩa rất lớn đối với người khiếm thị cũng như thể hiện sự văn minh của xã hội. Tuy nhiên với thực trạng còn nhiều vấn đề khó giải quyết như ở Việt Nam thì vạch dẫn đường vẫn còn nhiều khiếm khuyết trong cả việc thiết kế lẫn sử dụng. Các nhà quy hoạch đô thị chưa thực sự đứng trên lập trường của người khuyết tật và suy nghĩ cho họ. Từ một nét đẹp của xã hội, những vạch dẫn đường này có thể hạ thấp hình ảnh của đất nước ta trong ánh mắt bạn bè quốc tế.
+</p>
+
+
+
 
             <?php
             $count = $post->view_count;

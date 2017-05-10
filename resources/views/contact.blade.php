@@ -7,13 +7,13 @@
 	<meta name="description" content="VJshare">
 	<title>YNU-Góc chia sẻ</title>
 	<link rel="profile" href="http://gmpg.org/xfn/11">
-	<link rel="stylesheet" type="text/css" media="all" href="/css/style.css">
+	<link rel="stylesheet" type="text/css" media="all" href="{{{asset('css/style.css')}}}">
 	<!--[if lt IE 9]>
 	<script src="js/html5.js"></script>
 	<script src="js/css3-mediaqueries.js"></script>
 	<![endif]-->
-	<script src="js/jquery1.4.4.min.js"></script>
-	<script src="js/script.js"></script>
+	<script src="{{{asset('js/jquery1.4.4.min.js')}}}"></script>
+	<script src="{{{asset('js/script.js')}}}"></script>
 </head>
 
 <body>

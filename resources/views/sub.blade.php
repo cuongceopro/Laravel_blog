@@ -8,14 +8,14 @@
 
 			<section class="content">
 
-				<h3 class="heading">{{ $category_posts[0]->category->name }}</h3>
+				<h3 class="heading"><b>Chuyên mục: {{ $category_posts[0]->category->name }}</b></h3>
 				<article class="post">
 
 					@foreach($category_posts as $category_post)
 
 
 					<h3>{{ $category_post->title }}</h3>
-					<p class="dateLabel">2016/11/20</p>
+					<p class="dateLabel">{{ date("d/m/Y",strtotime($category_post->created_at)) }}</p>
 					<p><img src="{{{asset('images/detail/detail_1_1.jpg')}}}" alt="" width="260" height="113" class="alignright" />
             {{ $category_post->content_summary }}
 						</p>

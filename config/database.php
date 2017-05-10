@@ -1,5 +1,12 @@
 <?php
 
+//if (!defined('RDS_HOSTNAME')) {
+  //define('RDS_HOSTNAME', $_SERVER['RDS_HOSTNAME']);
+  //define('RDS_USERNAME', $_SERVER['RDS_USERNAME']);
+  //define('RDS_PASSWORD', $_SERVER['RDS_PASSWORD']);
+  //define('RDS_DB_NAME', $_SERVER['RDS_DB_NAME']);
+//}
+
 return [
 
     /*
@@ -40,13 +47,17 @@ return [
         ],
 
         'mysql' => [
-            'driver' => 'mysql',
+            //'driver' => 'mysql',
+            //'host'      => RDS_HOSTNAME,
+            //'database'  => RDS_DB_NAME,
+            //'username'  => RDS_USERNAME,
+            //'password'  => RDS_PASSWORD,
             'host' => env('DB_HOST', 'localhost'),
-            'port' => env('DB_PORT', '8889'),
+            //'port' => env('DB_PORT', '8889'),
             'database' => env('DB_DATABASE', 'blog_test'),
             'username' => env('DB_USERNAME', 'root'),
             'password' => env('DB_PASSWORD', 'root'),
-            'unix_socket'   => '/Applications/MAMP/tmp/mysql/mysql.sock',
+            //'unix_socket'   => '/Applications/MAMP/tmp/mysql/mysql.sock',
             'charset' => 'utf8',
             'collation' => 'utf8_unicode_ci',
             'prefix' => '',
