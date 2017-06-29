@@ -11,9 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+    //return view('welcome');
+//});
 
 //Route::get('/bkk', function(){
   //return 'Ok';
@@ -31,7 +31,7 @@ Route::post('/store', 'PostsController@store');
 
 Route::post('/comment_store', 'CommentsController@store');
 
-Route::get('/bkk', 'Controller@getBkk');
+Route::get('/', 'Controller@getBkk');
 
 Route::get('/bkk_detail', 'Controller@getDetail');
 
@@ -40,3 +40,5 @@ Route::get('/sub/{id?}', 'Controller@getSub');
 Route::get('/aboutus', 'Controller@getAboutus');
 
 Route::get('/contact', 'Controller@getContact');
+
+Route::get('/error', 'Controller@getError');

@@ -48,6 +48,10 @@ class Controller extends BaseController
       return view('contact');
     }
 
+    public function getError()
+    {
+      return view('error');
+    }
 
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 }

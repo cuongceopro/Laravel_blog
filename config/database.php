@@ -47,7 +47,7 @@ return [
         ],
 
         'mysql' => [
-            //'driver' => 'mysql',
+            'driver' => 'mysql',
             //'host'      => RDS_HOSTNAME,
             //'database'  => RDS_DB_NAME,
             //'username'  => RDS_USERNAME,

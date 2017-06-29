@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=yes, maximum-scale=1.0, minimum-scale=1.0">
 	<meta name="description" content="VJshare">
-	<title>YNU-Góc chia sẻ</title>
+	<title>VJShare</title>
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="stylesheet" type="text/css" media="all" href="{{{asset('css/style.css')}}}">
 	<!--[if lt IE 9]>
@@ -21,7 +21,7 @@
 	<header id="header" role="banner">
 		<div class="inner">
 			<div class="logo">
-				<a href="/bkk" title="VJshare" rel="home">VJ-SHARE<br /><span>TOGETHER WE CAN</span</a>
+				<a href="/vjshare" title="VJshare" rel="home">　VJ-SHARE　<br /><span>　 TOGETHER WE CAN 　</span</a>
 					<h1>Do something for our country</h1>
 					<!--
 				<h1>Cổng thông tin chính thức của YNU Benkyoukai</h1>
@@ -32,14 +32,14 @@
 					<a class="menu" id="menu"><span>MENU</span></a>
 					<div class="panel">
 						<ul id="topnav">
-							<li ><a href="/bkk"><strong> Trang chủ</strong><br /><span>Top</span></a></li>
-							<li ><a href="/aboutus"><strong>About us</strong><br /><span>Who we are ?</span></a>
+							<li ><a href="/vjshare"><strong> Trang chủ</strong><br /><span>Top</span></a></li>
+							<li ><a href="/vjshare/aboutus"><strong>About us</strong><br /><span>Who we are ?</span></a>
 							</li>
 							<!--
 							<li><a href="/detail"><strong>Hoạt động</strong><br /><span>Activity</span></a></li>
 							<li><a href="/detail"><strong>Thành viên</strong><br /><span>Members</span></a></li>
 						-->
-							<li class="current-menu-item"><a href="/contact"><strong>Liên hệ</strong><br /><span>Contact</span></a></li>
+							<li class="current-menu-item"><a href="/vjshare/contact"><strong>Liên hệ</strong><br /><span>Contact</span></a></li>
 						</ul>
 					</div>
 				</div>
@@ -69,12 +69,13 @@
 		<div class="inner">
 			<section class="gridWrapper">
 				<article class="grid">
-					<p class="logo"><a href="/bkk" title="ホームページサンプル株式会社" rel="home">VJ-SHARE<br /><span>TOGETHER WE CAN</span></a></p>
+					<p class="logo"><a href="/vjshare" title="VJShare" rel="home">　 VJ-SHARE 　<br /><span>　　TOGETHER WE CAN　　</span></a></p>
 					<h1>Do something for our country</h1>
 				</article>
 				<article class="grid">
-					<p class="tel"><span>Điện thoại:</span> <strong>080-3899-2908</strong></p>
+					<!--<p class="tel"><span>Điện thoại:</span> <strong>080-3899-2908</strong></p>-->
 					<p class="open">Email: ynu_benkyoukai@gmail.com</p>
+					<p class="open">Facebook: VJShare</p>
 				</article>
 				<article class="grid copyright">
           Copyright(c) 2017 YNU-Benkyoukai All Rights Reserved. Design by <a href="http://f-tpl.com" target="_blank" rel="nofollow">http://f-tpl.com</a>

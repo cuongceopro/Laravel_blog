@@ -44,7 +44,7 @@
             <p>Từ những gì hằng ngày được nghe, được thấy, được đọc, thúc đẩy những con người trẻ chúng ta suy ngẫm, và trong bản thân
               đưa ra cho mình những nhận định, những ý tưởng riêng. Tại đây các thành viên mong muốn được tổng hợp, sắp xếp lại những ý
               tưởng tạo tiền đề cho việc hình thành những dự án độc lập sau này. &#8230;</p>
-              <p class="readmore"><a href="{!! URL::to('sub/3') !!}">Xem thêm</a></p>
+              <p class="readmore"><a href="{!! URL::to('/error') !!}">Xem thêm</a></p>
             </div>
           </article>
           <article class="grid">
