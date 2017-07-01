@@ -25,7 +25,7 @@ Route::get('/detail/{id?}', 'PostsController@detail');
 
 Route::get('/category/{id?}', 'PostsController@showCategory');
 
-Route::get('/create', 'PostsController@create');
+//Route::get('/create', 'PostsController@create');
 
 Route::post('/store', 'PostsController@store');
 
@@ -42,3 +42,14 @@ Route::get('/aboutus', 'Controller@getAboutus');
 Route::get('/contact', 'Controller@getContact');
 
 Route::get('/error', 'Controller@getError');
+
+Auth::routes();
+
+Route::get('/create', 'HomeController@index');
+
+Route::get('/image', 'UploadController@index');
+Route::post('/image/store', [
+    'as' => 'store', 'uses' => 'UploadController@store'
+]);
+
+Route::post('/upload', 'HomeController@upload');
