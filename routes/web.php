@@ -22,12 +22,16 @@
 Route::get('/bcc', 'PostsController@bcc');
 
 Route::get('/detail/{id?}', 'PostsController@detail');
+Route::get('/detail_test/{id?}', 'HomeController@detail_test');
 
 Route::get('/category/{id?}', 'PostsController@showCategory');
+Route::get('/waiting_accept', 'HomeController@waiting_accept');
 
 //Route::get('/create', 'PostsController@create');
 
 Route::post('/store', 'PostsController@store');
+Route::post('/update/{id?}', 'PostsController@update');
+Route::get('/accept/{id?}', 'PostsController@accept');
 
 Route::post('/comment_store', 'CommentsController@store');
 
@@ -46,6 +50,10 @@ Route::get('/error', 'Controller@getError');
 Auth::routes();
 
 Route::get('/create', 'HomeController@index');
+Route::get('/edit/{id?}', 'HomeController@edit');
+// Route::get('/register', function () {
+//     return redirect('/login');
+// });
 
 Route::get('/image', 'UploadController@index');
 Route::post('/image/store', [

@@ -6,20 +6,20 @@
     <div class="col-md-8 col-md-offset-2">
 
       <!--{{ Form::open(['url' => 'store'], array('class' => 'form')) }}-->
-      {{ Form::open(['url' => 'store','method' => 'post','files' => true], array('class' => 'form')) }}
+      {{ Form::open(['url' => "update/$post->id",'method' => 'post','files' => true], array('class' => 'form')) }}
 
 
       <div class="form-group">
         <label for="title" class="">タイトル</label>
         <div class="">
-          {{ Form::text('title', null, array('class' => '')) }}
+          {{ Form::text('title', $post->title, array('class' => '')) }}
         </div>
       </div>
 
       <div class="form-group">
         <label for="author" class="">編集者</label>
         <div class="">
-          {{ Form::text('author', null, array('class' => '')) }}
+          {{ Form::text('author', $post->author, array('class' => '')) }}
         </div>
       </div>
 
@@ -27,11 +27,26 @@
         <label for="cat_id" class="">カテゴリー</label>
         <div class="">
           <select name="cat_id" type="text" class="">
-            <option></option>
+            @if ($post->cat_id === 1)
+            <option value="1" name="1" selected>Vấn đề xã hội</option>
+            @else
             <option value="1" name="1">Vấn đề xã hội</option>
+            @endif
+            @if ($post->cat_id === 2)
+            <option value="2" name="2" selected>Dịch thuật</option>
+            @else
             <option value="2" name="2">Dịch thuật</option>
-            <option value="3" name="2">Project</option>
-            <option value="4" name="2">Suy ngẫm</option>
+            @endif
+            @if ($post->cat_id === 3)
+            <option value="3" name="3" selected>Project</option>
+            @else
+            <option value="3" name="3">Project</option>
+            @endif
+            @if ($post->cat_id === 4)
+            <option value="4" name="4" selected>Suy ngẫm</option>
+            @else
+            <option value="4" name="4">Suy ngẫm</option>
+            @endif
           </select>
         </div>
       </div>
@@ -39,14 +54,14 @@
       <div class="form-group">
         <label for="content" class="">本文</label>
         <div class="">
-          {{ Form::textarea('content', null, array('class' => '')) }}
+          {{ Form::textarea('content', $post->content, array('class' => '')) }}
         </div>
       </div>
 
       <div class="form-group">
         <label for="content" class="">略文</label>
         <div class="">
-          {{ Form::textarea('content_summary', null, array('class' => '')) }}
+          {{ Form::textarea('content_summary', $post->content_summary, array('class' => '')) }}
         </div>
       </div>
 
@@ -67,13 +82,6 @@
         </ul>
       </div>
       @endif
-
-      <div class="form-group">
-        <label for="author" class="">画像フォルダ</label>
-        <div class="">
-          {{ Form::text('folder', null, array('class' => '')) }}
-        </div>
-      </div>
 
       <div class="form-group">
         {!! Form::label('file', 'サムネイル画像', ['class' => 'control-label']) !!}
@@ -102,7 +110,7 @@
   -->
 
   <div class="form-group">
-    <button type="submit" class="btn btn-primary">投稿する</button>
+    <button type="submit" class="btn btn-primary">アップデート</button>
   </div>
 
   {{ Form::close() }}
