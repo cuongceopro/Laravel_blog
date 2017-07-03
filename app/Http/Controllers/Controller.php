@@ -32,7 +32,7 @@ class Controller extends BaseController
 
     public function getSub($id){
       $category_posts_a = Post::latest('id');
-      $category_posts = $category_posts_a->where('cat_id', $id)->paginate(10);
+      $category_posts = $category_posts_a->where('cat_id', $id)->where('status',0)->paginate(10);
 
        return View::make('sub')
          ->with('category_posts', $category_posts);
